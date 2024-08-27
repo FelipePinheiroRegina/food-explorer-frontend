@@ -8,9 +8,14 @@ function AuthProvider({ children }) {
 
     async function login({ email, password, handleOpenSuccess, handleOpenError }) {
         try {
-            const response = await api.post('/sessions', { email, password }, {withCredentials: true})
+            const response = await api.post('/sessions', { email, password }) //{withCredentials: true} para utilizar cookies
 
-            const { user } = response.data
+            const { user, token } = response.data
+
+            sessionStorage.setItem("@foodexplorer:user", JSON.stringify(user))
+            sessionStorage.setItem("@foodexplorer:token", token)
+
+            api.defaults.headers.common['Authorization'] = `Bearer ${token}`
 
             handleOpenSuccess(`Successful authentication, Welcome ${user.name} 👋`)
 
@@ -38,9 +43,13 @@ function AuthProvider({ children }) {
 
     useEffect(() => {
         const user = sessionStorage.getItem('@foodexplorer:user')
+        const token = sessionStorage.getItem('@foodexplorer:token')
 
-        if(user) {
+        if(user && token) {
+             api.defaults.headers.common['Authorization'] = `Bearer ${token}`
+
             setData({ 
+                token,
                 user: JSON.parse(user)
             })
         }
