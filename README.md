@@ -1,13 +1,38 @@
-#### Bem-Vindo ao front-end do food-explorer, projeto onde tive grandes desafios para desenvolver, ele tem o intuito de consolidar todos os conhecimentos que eu pude absorver durante minha caminhada na trilha full-stack da tão conceituada rocketseat 🟣🚀 ...
+#### Bem-Vindo ao front-end do food-explorer, este projeto tem o intuito de consolidar todos os conhecimentos que eu pude absorver durante minha caminhada na trilha full-stack da tão conceituada rocketseat 🟣🚀
 ---
 #### Quais foram as tecnologias?
 React para desenvolver todas as interfaces fluidas, usei também pacotes como react-icons para fazer toda a parte dos ícones, react-number-format para tratar algumas entradas de dados nos inputs do tipo number, estilizei e deixei as interfaces responsivas com styled-components, toda a parte de rotas utilizando react-router-dom deixando minha navegação toda na parte do client, para comunicação com a minha API RESTFUL utilizei axios, deixando minhas interfaces bem servidas.
 
-### Como foi a experiência de desenvolver esse projeto final (front-end)? 
+`"react": "^18.3.1"`
+
+`"axios": "^1.7.2"`
+
+`"react-dom": "^18.3.1"`
+
+`"react-icons": "^5.2.1"`
+
+`"react-number-format": "^5.4.0"`
+
+`"react-router-dom": "^6.25.1"`
+
+`"styled-components": "^6.1.11"`
+
+#### Quais as telas e funcionalidades?
+É um aplicativo de comida web, onde você pode escolher por uma refeição, sobremesa, suco, ou ambos, separei a aplicação por 3 packs de rotas, primeiro as rotas de autenticação, qualquer um pode se cadastrar, existe duas roles para o usuário: (customer, admin). As rotas do customer são: Home, Details, Favorites, History, Orders. As rotas do admin são: Home, Details, History, Update, Create. Porém as rotas iguais para admin e customer possuem funcionalidades diferentes, um exemplo.: na rota de History, o admin tem permissão de alterar o status do pedido, enquanto o customer pode apenas vê-lo. Essa lógica perdura por todas as telas da aplicação.
+
+#### Como foi a experiência de desenvolver esse projeto final (front-end)? 
 Foi empolgante e desafiador projetar todas as interfaces e componentes, com desenhos e pesquisas para encontrar a melhor maneira de reaproveitar muito código e também torná-los fluidos e responsivos. Comecei com a técnica mobile first e, depois, adaptei para as telas de tablet e desktop. Não demorei muito para começar a codar kkkk. Estava empolgado com o projeto, e muitas coisas só surgem na hora da mão na massa, não tem jeito. Sempre que eu travava na lógica, tentando entender como fazer determinada funcionalidade funcionar bem, buscava conhecimento, e isso me fazia aprender um pouco mais todos os dias. Essa é a parte que julgo essencial em um projeto: ele te deixar desconfortável e te fazer pesquisar todo santo dia para aprender algo que você não sabe. Com o tempo, o projeto foi ganhando forma e foi finalizado com sucesso. Absorvi muita coisa com ele e, pode ter certeza, sou um desenvolvedor melhor do que eu era quando comecei a desenvolvê-lo. Continuo em busca de projetos como este, que me tirem da zona de conforto e me façam evoluir dia após dia. Faça acontecer! 🚀 Queria deixar um abraço para meus mestres Mayk Brito e Rodrigo Gonçalves. Brilhantes!
 
 ### Como eu faço para este projeto funcionar? 
-Baixe o arquivo no seu computador, entre na raiz do projeto pelo terminal e execute o comando `npm install` e `npm run dev`
+Baixe o ZIP do projeto no seu computador, entre na raiz do projeto pelo terminal e execute o comando `npm install` e `npm run dev`
+
+Usei o netlify para fazer o deploy do Front-end
+
+[Deploy do projeto](https://food-explorer-pinheiro.netlify.app/)
+
+importante lembrar que está aplicação consome sua própria API RESTFUL. Siga o link para o repositório do [Back-end](https://github.com/FelipePinheiroRegina/food-explorer-backend) 
+
+OBS: O Back-end foi hospedado no render utilizando os serviços free, logo, os dados não são persistentes, e quando fica um bom tempo sem fazer requisições, entra em modo de hibernação e quando tentar acessar da próxima vez, terá que esperar o serviço ficar de pé.
 
 ---
 ### Versão Desktop
