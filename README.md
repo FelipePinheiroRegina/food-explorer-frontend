@@ -23,8 +23,11 @@ React para desenvolver todas as interfaces fluidas, usei também pacotes como re
 #### Como foi a experiência de desenvolver esse projeto final (front-end)? 
 Foi empolgante e desafiador projetar todas as interfaces e componentes, com desenhos e pesquisas para encontrar a melhor maneira de reaproveitar muito código e também torná-los fluidos e responsivos. Comecei com a técnica mobile first e, depois, adaptei para as telas de tablet e desktop. Não demorei muito para começar a codar kkkk. Estava empolgado com o projeto, e muitas coisas só surgem na hora da mão na massa, não tem jeito. Sempre que eu travava na lógica, tentando entender como fazer determinada funcionalidade funcionar bem, buscava conhecimento, e isso me fazia aprender um pouco mais todos os dias. Essa é a parte que julgo essencial em um projeto: ele te deixar desconfortável e te fazer pesquisar todo santo dia para aprender algo que você não sabe. Com o tempo, o projeto foi ganhando forma e foi finalizado com sucesso. Absorvi muita coisa com ele e, pode ter certeza, sou um desenvolvedor melhor do que eu era quando comecei a desenvolvê-lo. Continuo em busca de projetos como este, que me tirem da zona de conforto e me façam evoluir dia após dia. Faça acontecer! 🚀 Queria deixar um abraço para meus mestres Mayk Brito e Rodrigo Gonçalves. Brilhantes!
 
-### Como eu faço para este projeto funcionar? 
-Baixe o ZIP do projeto no seu computador, entre na raiz do projeto pelo terminal e execute o comando `npm install` e `npm run dev`
+### Como rodar o projeto na sua máquina
+1. **Baixe o arquivo ZIP do projeto para o seu computador.**
+2. **Acesse a pasta raiz do projeto pelo terminal.**
+3. **Instale as dependências** executando o comando: `npm install`.
+4. **Execute o projeto em modo de desenvolvimento** com o comando: `npm run dev`.
 
 Usei o netlify para fazer o deploy do Front-end
 
